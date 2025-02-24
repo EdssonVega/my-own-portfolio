@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg enable-background="new 0 0 1046.849 788.607" version="1.0" viewBox="0 0 1046.8 788.61" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+		
+	</foreignObject>
+	<g fill="#F37B0F">
+		<path d="m422 122.54 50.601 185.57h0.899l47-185.57h75.167l-73.167 291.63h-99.5l-76.486-291.63h75.486z"/>
+		<polygon points="603 122.61 587.66 196.61 666 196.61 666 494.61 757 494.61 757 196.61 849 196.61 849 122.61"/>
+		<polygon points="281 347.61 310 347.61 310 266.61 281 266.61 281 196.61 356.3 196.61 338.66 122.61 208 122.61 208 494.61 656 494.61 656 419.61 281 419.61"/>
+		<path d="m72.996 583.61v56.715c0 11.499 9.419 21.285 20.905 21.285h425.43l-22.667 67-198.67 29h498.67l-200.67-30.333-21.333-65.667h376.52c11.499 0 20.819-9.786 20.819-21.285v-56.715h-899z"/>
+		<path d="m951.14 46.607h-857.24c-11.486 0-20.905 9.698-20.905 21.198v501.8h899v-501.8c-0.054-11.5-9.374-21.198-20.859-21.198zm-4.141 501h-48.445c-1.984 0.645-4.094 1-6.287 1h-739.49c-2.203 0-4.321-0.355-6.312-1h-51.465v-477h852v477z"/>
+	</g>
+</switch>
+
+</svg>
