@@ -1,6 +1,6 @@
 import './App.css';
+import AboutMeSection from './components/AboutMe/AboutMe';
 import HeroSection from './components/Hero/Hero';
-
 import NavbarSection from './components/navbar/Navbar';
 /*
 import HeroSection from './components/Hero/Hero';
@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <NavbarSection />
       <HeroSection />
+      <AboutMeSection />
     </div>
   );
 }

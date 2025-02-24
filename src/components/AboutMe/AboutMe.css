@@ -1,0 +1,217 @@
+.AboutMeSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 85%;
+    padding: 150px 0px;
+    background-color: black;
+    color: white;
+}
+
+.aboutMeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.descripcion h1{
+    align-self:start;
+    font-size: 3vw;
+    color: rgb(241, 123, 12);
+}
+
+.descripcion p{
+    font-family: sans-serif;
+    margin: 3vw 0px;
+    line-height: 35px;
+    font-size: 1.4vw;
+    text-align: left;
+    font-style: italic;
+}
+
+.photoSection{
+    width: 35%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yo{
+    filter: contrast(1.2);
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50% ;
+    border: 3px solid white; 
+
+}
+.yoContainer{
+    width: 100%;
+    aspect-ratio: 1/1;
+    transform: scale(0.75);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.yoContainer::before{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, transparent 85%, rgba(241,123,12,1) 85%);
+    clip-path: polygon(-2% 0, 102% 102%, 102% 0, -2% 102%);
+    position: absolute;
+    content:" ";
+    height: 120%;
+    width:120%;
+    border-radius: 50% ; 
+    border: 3px solid white; 
+    animation: marcoFoto 5s linear 0s infinite alternate;
+}
+
+.yoContainer:hover::before, .yoContainer:hover .yo{
+    border: 5px solid rgba(241,123,12,1) ;
+    transition: all 1s;
+    box-shadow: 0px 0px 10px 5px rgb(241, 123, 12) 
+}
+
+.skillsSection{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+}
+
+.skillsSection h1{
+    align-self:start;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(241, 123, 12);
+}
+
+.skillsReal{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+}
+
+
+@keyframes marcoFoto {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:1328px) {
+    .yo, .yoContainer{
+        transform: scale(0.85);
+    }
+
+    .yoContainer::before{
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, transparent 85%, rgba(241,123,12,1) 85%);
+        clip-path: polygon(-2% 0, 102% 102%, 102% 0, -2% 102%);
+        position: absolute;
+        content:" ";
+        border: 5px solid white ;
+        height: 100%;
+        width:100%;
+        border-radius: 50% ;  
+        animation: marcoFoto 5s linear 0s infinite alternate;
+    }
+
+    .descripcion h1{
+        font-size: 3.5vw;
+    }
+
+    .descripcion p{
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+}
+
+@media (max-width:1024px){
+
+    .AboutMeSection{
+        padding: 100px 0;
+        justify-content: space-between;
+    }
+
+    .photoSection{
+        width: 65%;
+    }
+    .aboutMeContainer{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion{
+        width: 100%;
+    }
+
+    .descripcion p{
+        font-size: 2vw;
+    }
+
+    .skillsReal{
+        width: 75vw;
+        align-self: center;
+    }
+}
+
+@media (max-width:768px){
+    .descripcion p{
+        font-size: 1.25rem;
+        line-height: 25px;  
+    }
+    .descripcion h1{
+        font-size: 2rem;
+        align-self: center;
+    }
+
+    
+    .descripcion{
+        height: unset;   
+    }
+    .skillsReal{
+        width: 85vw;
+        align-self: center;
+    }
+    .skillsSection h1{
+        align-self:center;
+    }
+}
+
+
+@media (max-width:480px){
+
+    .AboutMeSection{
+        width: 98%;
+    }
+    .photoSection{
+        width: 100%;
+    }
+
+    .descripcion{
+        padding:0 10px;   
+    }
+}
