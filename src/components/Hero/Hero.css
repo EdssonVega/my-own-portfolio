@@ -82,7 +82,7 @@
 .adorno{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
     width: 50%;
-    background:linear-gradient(325deg, rgba(184, 102, 21, 0.685), rgba(34, 31, 31, 0.836)), url("../../images/gal.jpg");
+    background:linear-gradient(325deg, rgba(184, 102, 21, 0.685), rgba(34, 31, 31, 0.836)), url("../../images/fondo\ hero\ 1.JPG");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -149,7 +149,7 @@
 
     .hero{
         justify-content: center;
-        background:linear-gradient(325deg, rgba(151, 83, 16, 0.685), rgba(34, 31, 31, 0.836)), url("../../images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg");
+        background:linear-gradient(325deg, rgba(151, 83, 16, 0.685), rgba(34, 31, 31, 0.836)), url("../../images/fondo\ hero\ mobile.JPG");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
