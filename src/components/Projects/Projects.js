@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.css"
 import ProjectCards from "./projectsCards/projectsCards";
 import portafolioFoto from "../../images/portafolio.JPG"
-import matricesFoto from "../../images/matrices.PNG"
+import matricesFoto from "../../images/matrices.JPG"
 
 const projects = [
     {
