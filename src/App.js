@@ -1,5 +1,6 @@
 import './App.css';
 import AboutMeSection from './components/AboutMe/AboutMe';
+import ExperienceSection from './components/Experience/Experience';
 import HeroSection from './components/Hero/Hero';
 import NavbarSection from './components/navbar/Navbar';
 import ProjectSection from './components/Projects/Projects';
@@ -18,6 +19,7 @@ function App() {
       <HeroSection />
       <AboutMeSection />
       <ProjectSection />
+      <ExperienceSection />
     </div>
   );
 }

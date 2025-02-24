@@ -1,0 +1,35 @@
+.experienceSection{
+    padding: 50px 0;
+    width: 85%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceSection h1{
+    align-self: flex-start;
+    font-size: 3vw;
+    color:rgb(241, 123, 12);
+    margin: 50px 0px;
+}
+.showExperiences{
+    width: 100%;
+}
+
+@media (max-width:1328px){
+    .experienceSection h1{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width:900px){
+    .experienceSection h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .experienceSection h1{
+        align-self: center;
+    }
+}

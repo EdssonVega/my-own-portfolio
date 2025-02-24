@@ -1,0 +1,90 @@
+.experienceCardContainer{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(241, 123, 12);
+    width:86vw;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.experienceCardContainer h1{
+    margin: 10px 0px !important;
+}
+
+.experienceCardContainer h3{
+    color: white;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.experienceCardContainer h2{
+    color: rgb(241, 123, 12);
+}
+
+.experienceCardContainer p{
+    color: rgb(117, 111, 111);
+}
+
+.experiencePhotosContainer{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display: none;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.enlace img{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+.enlace{
+    width: 20%;
+    position: relative;
+    border-radius: 15px;
+
+}
+.enlace::after{
+    content: " ";
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(152deg, rgba(241, 123, 12, 0.692), rgba(73, 68, 68, 0.705), rgba(0, 0, 0, 0.678),rgba(255, 255, 255, 0.267));
+}
+
+.enlace:hover::after{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.experiencePhotosContainer img:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.experienceCardContainer:hover .experiencePhotosContainer{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 0.5s;
+    display: flex;
+}
+
+@media (max-width:768px){
+    .enlace{
+        width: 40%;
+    }
+
+    .experienceCardContainer h1{
+        align-self: flex-start !important;
+    }
+}
