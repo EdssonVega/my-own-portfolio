@@ -5,8 +5,6 @@ import { FaGithubSquare } from "react-icons/fa"
 import { GrDocumentDownload } from "react-icons/gr"
 import cv from "../../resume Edsson Vega.pdf"
 
-//testing github bug
-
 
 function HeroSection(){
     return(
