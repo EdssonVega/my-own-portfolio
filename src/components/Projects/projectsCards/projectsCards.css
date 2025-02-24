@@ -1,0 +1,164 @@
+.projectContainer{
+    background-color: black;
+    border-radius: 10px;
+    width: 400px;
+    aspect-ratio: 4/5;
+    border: 1px solid rgb(90, 89, 87);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.projectContainer:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+    border: 1px solid rgb(241, 123, 12);
+    box-shadow: 0px 0px 10px 5px rgb(241, 123, 12);
+}
+
+.projectImage{
+    border-radius: 10px 10px 0 0;
+    display: block;
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid rgb(90, 89, 87);
+
+}
+
+.projectText{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 2vw;
+    gap: 20px;
+}
+
+.projectText h2{
+    color: rgb(241, 123, 12);
+}
+
+.projectText p{
+    color: white;
+}
+
+.projectButtons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    gap: 20px;
+}
+
+.toGitCode{
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid rgb(241, 123, 12);
+    color:rgb(241, 123, 12) ;
+    background-color: black;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+.toGitCode::before{
+    clip-path: circle(0px at left);
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241, 123, 12);
+    z-index: -1;
+}
+
+.toGitCode:hover::before{
+    clip-path: circle(100px at left);
+    transition: 0.5s;
+   
+}
+.toGitCode:hover{
+    color: black;
+    transition: 0.5s;
+}
+.toHost{
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid rgb(241, 123, 12);
+    background-color:rgb(241, 123, 12);
+    color: black;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.toHost::before{
+    clip-path: circle(0px at left);
+    content: " ";
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+.toHost:hover::before{
+    clip-path: circle(100px at left);
+    transition: 0.5s;
+   
+}
+
+.toHost:hover{
+    color: rgb(241, 123, 12);
+    transition: 0.5s;
+}
+
+
+@media (max-width:900px){
+    .projectContainer{
+        transform: scale(0.9);
+        margin-bottom: 0px;
+    }
+
+    .projectContainer:hover{
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width:768px){
+    .projectContainer{
+        aspect-ratio: unset;
+        height: 450px;
+    }
+
+    .projectContainer img{
+        height: 60%
+    }
+
+    .projectText{
+        height: 20%;
+    }
+
+    .projectButtons{
+        height: 20%;
+    }
+}
