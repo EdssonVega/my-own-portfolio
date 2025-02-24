@@ -1,4 +1,6 @@
 import './App.css';
+import HeroSection from './components/Hero/Hero';
+
 import NavbarSection from './components/navbar/Navbar';
 /*
 import HeroSection from './components/Hero/Hero';
@@ -12,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <NavbarSection />
-      
+      <HeroSection />
     </div>
   );
 }
