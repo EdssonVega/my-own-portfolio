@@ -10,6 +10,7 @@ function ContactMeSection () {
 
     const onSubmit = (e) =>{
         if(message.Message === "" || message.Name === ""){
+            e.preventDefault()
             setfillFields(true)
         } else {
             e.preventDefault()
