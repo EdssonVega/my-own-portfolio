@@ -71,7 +71,7 @@ const experiences = [
 function ExperienceSection(){
     return(
         <section className="experienceSection" id="experience">
-                <h1>EXPERIENCIA</h1>
+                <h1>EXPERIENCE</h1>
                 <div className="showExperiences">
                     {experiences.map((experience,index)=>(
                         <ExperienceCards tittle={experience.tittle} date={experience.Fecha} position={experience.Posicion} positionDescription={experience.Descripcion} key={index} foto1={experience.f1} foto2={experience.f2} foto3={experience.f3} foto4={experience.f4} url={experience.Link}/>
