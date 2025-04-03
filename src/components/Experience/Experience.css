@@ -1,9 +1,10 @@
 .experienceSection{
-    padding: 50px 0;
-    width: 85%;
+    padding: 50px 7%;
+    width: 100%;
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .experienceSection h1{
@@ -14,6 +15,9 @@
 }
 .showExperiences{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width:1328px){
@@ -31,5 +35,12 @@
 @media (max-width:768px){
     .experienceSection h1{
         align-self: center;
+    }
+}
+
+@media (max-width:768px){
+    .experienceSection {
+        width: 100%;
+        justify-content: center;
     }
 }
