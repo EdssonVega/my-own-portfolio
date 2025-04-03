@@ -13,6 +13,12 @@ function NavbarSection (){
         setBurguerMenu(!BurguerMenu)
     }
 
+    const closeBurguerMenu = () => {
+        if(BurguerMenu){
+            setBurguerMenu(false)
+        }
+    }
+
     return(
         <header>
             <div className="logoCont">
@@ -20,10 +26,10 @@ function NavbarSection (){
             </div>
             <GiHamburgerMenu className="toggle" onClick={burguerSwitch} />
             <div className={`buttonsContainer ${BurguerMenu==true?"display":""}`}>
-                <a className="navbarEnlaces" href="#aboutMe"><div className="buttonsNav">About me</div></a>
-                <a className="navbarEnlaces" href="#projects"><div className="buttonsNav">Projects</div></a>
-                <a className="navbarEnlaces" href="#experience"><div className="buttonsNav">Experience</div></a>
-                <a className="navbarEnlaces" href="#contactMe"><div className="buttonsNav">Contact me</div></a>
+                <a className="navbarEnlaces" href="#aboutMe" onClick={closeBurguerMenu}><div className="buttonsNav">About me</div></a>
+                <a className="navbarEnlaces" href="#projects" onClick={closeBurguerMenu}><div className="buttonsNav">Projects</div></a>
+                <a className="navbarEnlaces" href="#experience" onClick={closeBurguerMenu}><div className="buttonsNav">Experience</div></a>
+                <a className="navbarEnlaces" href="#contactMe" onClick={closeBurguerMenu}><div className="buttonsNav">Contact me</div></a>
             </div>
         </header>
     )
