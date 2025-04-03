@@ -131,7 +131,7 @@ a{
     
     .buttonsContainer{
         clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-        background-color: rgba(0, 0, 0, 0.959);
+        background-color: rgb(0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,6 +158,13 @@ a{
     .buttonsNav{ 
         width:100vw;
         height: 150px;
+    }
+
+    .buttonsContainer a{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
