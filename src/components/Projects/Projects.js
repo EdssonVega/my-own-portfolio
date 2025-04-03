@@ -3,13 +3,14 @@ import "./Project.css"
 import ProjectCards from "./projectsCards/projectsCards";
 import portafolioFoto from "../../images/portafolio.JPG"
 import matricesFoto from "../../images/matrices.JPG"
+import heroesSpaPhoto from "../../images/spa.JPG"
 
 const projects = [
     {
       Title:"Portfolio",
       Description:"Personal Portfolio created with React" , 
       Image:portafolioFoto,
-      ToGithub:"https://github.com/EdssonVega/portafolio-web",
+      ToGithub:"https://github.com/EdssonVega/my-own-portfolio",
       ToPage:"https://evtportfolio.netlify.app"
     },
     {
@@ -18,7 +19,14 @@ const projects = [
       Image:matricesFoto,
       ToGithub:"https://github.com/EdssonVega/calculo-de-matrices",
       ToPage:"https://calculodematrices.netlify.app/"
-    }
+    },
+    {
+        Title:"Heroes SPA",
+        Description:"A single web page that uses the functionality of react router dom" , 
+        Image:heroesSpaPhoto,
+        ToGithub:"https://github.com/EdssonVega/hero-spa",
+        ToPage:"https://herospa123.netlify.app"
+      }
 ]
 
 
