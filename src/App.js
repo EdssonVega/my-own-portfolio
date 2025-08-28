@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavbarSection />
       <HeroSection />
-      <AboutMeSection />
+      <AboutMeSection /> 
       <ProjectSection />
       <ExperienceSection />
       <ContactMeSection />

@@ -79,6 +79,18 @@
     display: flex;
 }
 
+.notImagesAllowedDiv{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+}
+
 @media (max-width:768px){
     .enlace{
         width: 40%;
