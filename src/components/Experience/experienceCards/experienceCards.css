@@ -29,12 +29,11 @@
 }
 
 .experiencePhotosContainer{
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    display: none;
     width: 100%;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    display: none;
 }
 
 .enlace img{
@@ -74,9 +73,9 @@
 }
 
 .experienceCardContainer:hover .experiencePhotosContainer{
+    display: flex;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: clip-path 0.5s;
-    display: flex;
 }
 
 .notImagesAllowedDiv{
@@ -91,6 +90,18 @@
     color: white;
 }
 
+.showImagesButton {
+  background-color: rgb(241, 123, 12);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: none; /* default hidden */
+}
+
 @media (max-width:768px){
     .enlace{
         width: 40%;
@@ -99,4 +110,30 @@
     .experienceCardContainer h1{
         align-self: flex-start !important;
     }
+    .showImagesButton {
+    display: block;
+  }
+
+  .experiencePhotosContainer {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .experiencePhotosContainer.visible {
+    display: flex;
+  }
+
+  .experienceCardContainer:hover .experiencePhotosContainer {
+    clip-path: none; /* desactiva hover en móviles */
+  }
+/*
+    .experiencePhotosContainer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 0.5s;
+    display: flex;
+    }*/
 }

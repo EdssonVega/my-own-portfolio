@@ -14,6 +14,10 @@ import nl1 from "../../../images/nl1.PNG"
 import nl2 from "../../../images/nl2.PNG"
 import nl3 from "../../../images/nl3.PNG"
 import nl4 from "../../../images/nl4.PNG"
+import gas1 from "../../../images/gas1.PNG"
+import gas2 from "../../../images/gas2.PNG"
+import gas3 from "../../../images/gas3.PNG"
+import gas4 from "../../../images/gas4.PNG"
 
 
 export const experiences = [
@@ -82,10 +86,10 @@ export const experiences = [
         Posicion: "Front End developer - Freelancer project",
         Descripcion: "Front-end developer in the development of a admin dashboard for a company, the most relevant function on this project its that I implemented the google maps API with the porpose of save the location of the customers and to be capable of trace routes between your real time geolocation and the house of any customer",
          imageList:[
-            nl1,
-        nl2,
-        nl3,
-        nl4,],
+            gas1,
+            gas2,
+            gas3,
+            gas4,],
         Link:"Not available"
     },
     {
